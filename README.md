@@ -25,16 +25,19 @@ And run Gulp
 ````
 $ gulp
 ````
+Open `localhost:8080` in your browser and check that `./www/index.html` loads ok.
+`````
+http://localhost:8080/
+`````
+#### TEMPLATE WORKFLOW ####
 
-Open `localhost:8080` in your browser and check that `./www/index.html` file is loaded. (*livereload is enabled by default via "*connect*" task on* `./gulpfile.js`)
+- You can start coding your project on `./www/index.html` `./sass/*` and `./javascripts/*` files
+- Livereload is enabled for `./sass/*` `./javascripts/*` & `./www/*.html` by default
+- "compiled" project lives on `./www` folder
+- `./sass/*` files compiles in `./www/css/style.min.css`
+- `./javascripts/*` files compiles in `./www/js/plugins.min.js`
 
-You can start coding your project on `./www/index.html` `./sass/*` and `./javascripts/*` files.  
-
-"compiled" project lives on `./www` folder.
-<br>`./sass/*` files compiles in `./www/css/style.min.css`
-<br>`./javascripts/*` files compiles in `./www/js/plugins.min.js`
-
-#### TEMPLATE WORKFLOW & ENVIRONMENT: ####
+#### TEMPLATE ENVIRONMENT: ####
 
 1. [Gulp](http://gulpjs.com/)
 2. [gulp-webserver](https://www.npmjs.com/package/gulp-webserver)
