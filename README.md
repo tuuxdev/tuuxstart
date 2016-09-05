@@ -1,4 +1,4 @@
-### TUUXSTART v1.0.0 ###
+### TUUXSTART v1.2.0 ###
 
 Starter template for HTML/CSS/JS projects with Gulp as task runner
 
@@ -25,16 +25,19 @@ And run Gulp
 ````
 $ gulp
 ````
+Open `localhost:8080` in your browser and check that `./www/index.html` loads ok.
+`````
+http://localhost:8080/
+`````
+#### TEMPLATE WORKFLOW ####
 
-If everything goes well, your browser opens new tab on *localhost:8000/www/index.html* where you can see the new project. (*livereload is enabled by default via "webserver" task on `./gulpfile.js`*)
+- You can start coding your project on `./www/index.html` `./sass/*` and `./javascripts/*` files
+- Livereload is enabled for `./sass/*` `./javascripts/*` & `./www/*.html` by default
+- "compiled" project lives on `./www` folder
+- `./sass/*` files compiles in `./www/css/style.min.css`
+- `./javascripts/*` files compiles in `./www/js/plugins.min.js`
 
-You can start coding your project on `./www/index.html` `./sass/*` and `./javascripts/*` files.  
-
-Your "compiled" project lives on `./www` folder.
-<br>`./sass/*` files compiles in `./www/css/style.min.css`
-<br>`./javascripts/*` files compiles in `./www/js/plugins.min.js`
-
-#### TEMPLATE WORKFLOW & ENVIRONMENT: ####
+#### TEMPLATE ENVIRONMENT: ####
 
 1. [Gulp](http://gulpjs.com/)
 2. [gulp-webserver](https://www.npmjs.com/package/gulp-webserver)
