@@ -40,7 +40,7 @@ http://localhost:8080/
 #### TEMPLATE ENVIRONMENT: ####
 
 1. [Gulp](http://gulpjs.com/)
-2. [gulp-webserver](https://www.npmjs.com/package/gulp-webserver)
+2. [gulp-connect](https://www.npmjs.com/package/gulp-connect)
 3. [gulp-sass](https://www.npmjs.com/package/gulp-sass)
 4. [gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
 5. [gulp-concat](https://www.npmjs.com/package/gulp-concat)
