@@ -7,63 +7,54 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
-var cssnano = require('gulp-cssnano');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 
 // TASK CONNECT
 gulp.task('connect', function () {
-  connect.server({
-    root: './www',
-    livereload: true
-  });
+	connect.server({
+		root: './www',
+		livereload: true
+	});
 });
 
 // TASK HTML
 gulp.task('html', function () {
-  gulp.src('./www/*.html')
-    .pipe(connect.reload());
+	gulp.src('./www/*.html')
+		.pipe(connect.reload());
 });
 
 // TASK SASS
 gulp.task('sass', function () {
-  return gulp.src(['./sass/main.scss'])
-    .pipe(sourcemaps.init())
-    .pipe(sass({
-      outputStyle: 'expanded'
-    }))
-    .pipe(autoprefixer())
-    .pipe(sourcemaps.write(''))
-    .pipe(concat('style.css'))
-    .pipe(gulp.dest('./www/css'))
-    .pipe(cssnano({
-      autoprefixer: {
-        add: true
-      }
-    }))
-    .pipe(sourcemaps.write(''))
-    .pipe(concat('style.min.css'))
-    .pipe(gulp.dest('./www/css'))
-    .pipe(connect.reload());
+	return gulp.src(['./sass/main.scss'])
+		.pipe(sourcemaps.init())
+		.pipe(sass({
+			outputStyle: 'expanded'
+		}))
+		.pipe(autoprefixer())
+		.pipe(concat('style.css'))
+		.pipe(sourcemaps.write('.'))
+		.pipe(gulp.dest('./www/css'))
+		.pipe(connect.reload());
 });
 
 // TASK JAVASCRIPTS
 gulp.task('javascripts', function () {
-  return gulp.src('javascripts/*.js')
-    .pipe(concat('plugins.js'))
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(uglify())
-    .pipe(gulp.dest('./www/js'))
-    .pipe(connect.reload());
+	return gulp.src('javascripts/*.js')
+		.pipe(concat('plugins.js'))
+		.pipe(rename({
+			suffix: '.min'
+		}))
+		.pipe(uglify())
+		.pipe(gulp.dest('./www/js'))
+		.pipe(connect.reload());
 });
 
 // WATCH FILES FOR CHANGES
 gulp.task('watch', function () {
-  gulp.watch('javascripts/*.js', ['javascripts']);
-  gulp.watch('sass/*.scss', ['sass']);
-  gulp.watch(['./www/*.html'], ['html']);
+	gulp.watch('javascripts/*.js', ['javascripts']);
+	gulp.watch('sass/*.scss', ['sass']);
+	gulp.watch(['./www/*.html'], ['html']);
 });
 
 // EXECUTE
