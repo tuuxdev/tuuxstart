@@ -1,0 +1,98 @@
+body {
+	font-family: $body-font;
+}
+
+h1,
+h2,
+h3 {
+	font-family: $head-font;
+}
+
+
+/* ===========================================================================
+ * TYPOGRAPHY COLORS
+ * ==========================================================================*/
+
+.font-theme {
+	color: $theme !important;
+}
+
+.font-white {
+	color: $white !important;
+}
+
+.font-black {
+	color: $black !important;
+}
+
+
+/* ===========================================================================
+ * TYPOGRAPHY SIZE
+ * ==========================================================================*/
+
+.font-body {
+	font-size: 1rem !important;
+}
+
+.font-xs {
+	font-size: .5em !important;
+}
+
+.font-s {
+	font-size: .8em !important;
+}
+
+.font-m {
+	font-size: 1.2em !important;
+}
+
+.font-l {
+	font-size: 1.5em !important;
+}
+
+.font-xl {
+	font-size: 2em !important;
+}
+
+.font-xxl {
+	font-size: 4em !important;
+}
+
+
+/* ===========================================================================
+ * TEXT UTILITIES
+ * ==========================================================================*/
+
+.text-uppercase {
+	text-transform: uppercase !important;
+}
+
+.text-lowercase {
+	text-transform: lowercase !important;
+}
+
+.text-capitalize {
+	text-transform: capitalize !important;
+}
+
+.text-right {
+	text-align: right !important;
+}
+
+.text-left {
+	text-align: left !important;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-justify {
+	text-align: justify !important;
+}
+
+.text-truncate {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

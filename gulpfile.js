@@ -20,7 +20,7 @@ gulp.task('connect', function () {
 
 // TASK HTML
 gulp.task('html', function () {
-	gulp.src('./www/*.html')
+	gulp.src('./www/**/*.html')
 		.pipe(connect.reload());
 });
 
@@ -29,7 +29,7 @@ gulp.task('sass', function () {
 	return gulp.src(['./sass/main.scss'])
 		.pipe(sourcemaps.init())
 		.pipe(sass({
-			outputStyle: 'expanded'//outputStyle: nested - expanded - compact - compressed
+			outputStyle: 'compressed'//outputStyle: nested - expanded - compact - compressed
 		}).on('error', sass.logError)) 
 		.pipe(autoprefixer())
 		.pipe(concat('style.css'))
@@ -52,9 +52,9 @@ gulp.task('javascripts', function () {
 
 // WATCH FILES FOR CHANGES
 gulp.task('watch', function () {
-	gulp.watch('javascripts/*.js', ['javascripts']);
-	gulp.watch('sass/*.scss', ['sass']);
-	gulp.watch(['./www/*.html'], ['html']);
+	gulp.watch('javascripts/**/*.js', ['javascripts']);
+	gulp.watch('sass/**/*.scss', ['sass']);
+	gulp.watch(['./www/**/*.html'], ['html']);
 });
 
 // EXECUTE

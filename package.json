@@ -1,6 +1,6 @@
 {
   "name": "tuuxstart",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "code life!",
   "main": "gulpfile.js",
   "scripts": {

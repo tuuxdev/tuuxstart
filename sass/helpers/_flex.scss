@@ -1,0 +1,35 @@
+.flex-vhcenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.flex-hcenter {
+	display: flex;
+	align-items: center;
+}
+
+.flex-vcenter {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-space-b {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex-space-a {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.flex-grow-1 {
+	display: flex;
+	> * {
+		flex-grow: 1;
+	}
+}

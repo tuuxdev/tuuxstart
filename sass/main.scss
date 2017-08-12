@@ -1,7 +1,48 @@
-@import '_normalize';
-@import '_variables';
-@import '_helpers';
-@import '_grid';
-@import '_core';
-@import '_media-queries';
-@import '_print-styles';
+/* ===========================================================================
+ * VARIABLES
+ * ==========================================================================*/
+
+@import 'variables/_colors';
+@import 'variables/_fonts';
+@import 'variables/_values';
+
+/* ===========================================================================
+ * BOX SIZING EVERY WHERE!
+ * ==========================================================================*/
+
+@import 'global/_box-sizing';
+@import 'global/_selection';
+
+/* ===========================================================================
+ * NORMALIZE
+ * ==========================================================================*/
+
+@import 'global/_normalize';
+
+/* ===========================================================================
+ * HELPERS
+ * ==========================================================================*/
+
+@import 'helpers/_backgrounds';
+@import 'helpers/_borders';
+@import 'helpers/_buttons';
+@import 'helpers/_flex';
+@import 'helpers/_margins';
+@import 'helpers/_paddings';
+@import 'helpers/_radius';
+@import 'helpers/_typography';
+@import 'helpers/_utilities';
+
+/* ===========================================================================
+ * COMPONENTS
+ * ==========================================================================*/
+
+@import 'components/_grid';
+@import 'components/_app';
+
+/* ===========================================================================
+ * RESPONSIVE
+ * ==========================================================================*/
+
+@import 'global/_media-queries';
+@import 'global/_print-styles';

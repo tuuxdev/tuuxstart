@@ -1,0 +1,5 @@
+::selection {
+	background-color: $theme;
+	text-shadow: none;
+	color: lighten($theme, 40%);
+}

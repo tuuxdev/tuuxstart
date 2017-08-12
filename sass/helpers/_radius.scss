@@ -1,0 +1,155 @@
+.radius-circle {
+	border-radius: 100%;
+}
+
+.radius {
+	border-radius: $pi-number !important;
+}
+
+.radius-xs {
+	border-radius: ($pi-number / 2) !important;
+}
+
+.radius-s {
+	border-radius: ($pi-number * 2) !important;
+}
+
+.radius-m {
+	border-radius: ($pi-number * 3) !important;
+}
+
+.radius-l {
+	border-radius: ($pi-number * 4) !important;
+}
+
+.radius-x {
+	border-radius: ($pi-number * 5) !important;
+}
+
+.radius-xl {
+	border-radius: ($pi-number * 6) !important;
+}
+
+
+/* RADIUS TOP LEFT */
+
+.radius-tl {
+	border-top-left-radius: $pi-number !important;
+}
+
+.radius-tl-xs {
+	border-top-left-radius: ($pi-number / 2) !important;
+}
+
+.radius-tl-s {
+	border-top-left-radius: ($pi-number * 2) !important;
+}
+
+.radius-tl-m {
+	border-top-left-radius: ($pi-number * 3) !important;
+}
+
+.radius-tl-l {
+	border-top-left-radius: ($pi-number * 4) !important;
+}
+
+.radius-tl-x {
+	border-top-left-radius: ($pi-number * 5) !important;
+}
+
+.radius-tl-xl {
+	border-top-left-radius: ($pi-number * 6) !important;
+}
+
+
+/* RADIUS TOP RIGHT */
+
+.radius-tr {
+	border-top-right-radius: $pi-number !important;
+}
+
+.radius-tr-xs {
+	border-top-right-radius: ($pi-number / 2) !important;
+}
+
+.radius-tr-s {
+	border-top-right-radius: ($pi-number * 2) !important;
+}
+
+.radius-tr-m {
+	border-top-right-radius: ($pi-number * 3) !important;
+}
+
+.radius-tr-l {
+	border-top-right-radius: ($pi-number * 4) !important;
+}
+
+.radius-tr-x {
+	border-top-right-radius: ($pi-number * 5) !important;
+}
+
+.radius-tr-xl {
+	border-top-right-radius: ($pi-number * 6) !important;
+}
+
+
+/* RADIUS BOTTOM RIGHT */
+
+.radius-br {
+	border-bottom-right-radius: $pi-number !important;
+}
+
+.radius-br-xs {
+	border-bottom-right-radius: ($pi-number / 2) !important;
+}
+
+.radius-br-s {
+	border-bottom-right-radius: ($pi-number * 2) !important;
+}
+
+.radius-br-m {
+	border-bottom-right-radius: ($pi-number * 3) !important;
+}
+
+.radius-br-l {
+	border-bottom-right-radius: ($pi-number * 4) !important;
+}
+
+.radius-br-x {
+	border-bottom-right-radius: ($pi-number * 5) !important;
+}
+
+.radius-br-xl {
+	border-bottom-right-radius: ($pi-number * 6) !important;
+}
+
+
+/* RADIUS BOTTOM LEFT */
+
+.radius-bl {
+	border-bottom-left-radius: $pi-number !important;
+}
+
+.radius-bl-xs {
+	border-bottom-left-radius: ($pi-number / 2) !important;
+}
+
+.radius-bl-s {
+	border-bottom-left-radius: ($pi-number * 2) !important;
+}
+
+.radius-bl-m {
+	border-bottom-left-radius: ($pi-number * 3) !important;
+}
+
+.radius-bl-l {
+	border-bottom-left-radius: ($pi-number * 4) !important;
+}
+
+.radius-bl-x {
+	border-bottom-left-radius: ($pi-number * 5) !important;
+}
+
+.radius-bl-xl {
+	border-bottom-left-radius: ($pi-number * 6) !important;
+}
