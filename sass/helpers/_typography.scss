@@ -8,29 +8,21 @@ h3 {
 	font-family: $head-font;
 }
 
-
 /* ===========================================================================
  * TYPOGRAPHY COLORS
  * ==========================================================================*/
 
-.font-theme {
-	color: $theme !important;
+ @each $name, $color in $colors {
+  .font-#{$name} {
+    color: map-get($color, base) !important;
+  }
 }
-
-.font-white {
-	color: $white !important;
-}
-
-.font-black {
-	color: $black !important;
-}
-
 
 /* ===========================================================================
  * TYPOGRAPHY SIZE
  * ==========================================================================*/
 
-.font-body {
+.font-n {
 	font-size: 1rem !important;
 }
 

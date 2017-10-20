@@ -1,15 +1,13 @@
+/* ===========================================================================
+ * BUTTONS
+ * ==========================================================================*/
+
 a {
 	color: $theme;
 	transition: $transition;
-	text-decoration: none;
 }
 
-a:hover {
-	color: darken($theme, 15%);
-	text-decoration: none;
-}
-
-@mixin mxn-btn($color, $size, $radius, $border) {
+@mixin mxn-btn($size, $radius) {
 	display: inline-block;
 	margin: 0px;
 	padding: .5em 1.2em;
@@ -17,16 +15,16 @@ a:hover {
 	font-weight: normal;
 	text-decoration: none;
 	text-align: center;
-	color: lighten($color, 95%);
-	background-color: $color;
 	border-radius: $radius;
-	border: $border solid $color;
-	cursor: pointer !important;
+	background: gray;
+	color: black;
+	border: 0;
 	outline: 0;
+	cursor: pointer !important;
 	transition: $transition;
 	&:focus,
 	&:hover {
-		opacity: .75;
+		opacity: .75 !important;
 	}
 }
 
@@ -34,18 +32,13 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
-.btn-main {
-	@include mxn-btn($theme, 1em, 4px, 2px);
+.btn {
+	@include mxn-btn(1em, 4px);
 }
 
-.btn-ghost {
-	@include mxn-btn($theme, 1em, 4px, 2px);
-	background: transparent;
-	color: $theme; //same as mixin variable
-}
-
-.btn-link {
-	@include mxn-btn($theme, 1em, 0px, 0px);
-	background: transparent;
-	color: $theme; //same as mixin variable
+@each $name, $color in $colors {
+  .btn-#{$name} {
+		color: map-get($color, font) !important;
+		background-color: map-get($color, base) !important;
+  }
 }

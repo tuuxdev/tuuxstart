@@ -1,11 +1,5 @@
-.bg-theme {
-	background-color: $theme !important;
-}
-
-.bg-white {
-	background-color: $white !important;
-}
-
-.bg-black {
-	background-color: $black !important;
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: map-get($color, base) !important;
+  }
 }

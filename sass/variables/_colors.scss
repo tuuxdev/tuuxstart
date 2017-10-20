@@ -1,3 +1,9 @@
 $theme: #2196F3;
 $white: #FFFFFF;
 $black: #000000;
+
+$colors: (
+	"theme":	(base: $theme, font: $white),
+	"white":	(base: $white, font: $black),
+	"black":	(base: $black, font: $white),
+);

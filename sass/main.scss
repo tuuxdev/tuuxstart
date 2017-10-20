@@ -20,25 +20,24 @@
 @import 'global/_normalize';
 
 /* ===========================================================================
- * HELPERS
- * ==========================================================================*/
-
-@import 'helpers/_backgrounds';
-@import 'helpers/_borders';
-@import 'helpers/_buttons';
-@import 'helpers/_flex';
-@import 'helpers/_margins';
-@import 'helpers/_paddings';
-@import 'helpers/_radius';
-@import 'helpers/_typography';
-@import 'helpers/_utilities';
-
-/* ===========================================================================
  * COMPONENTS
  * ==========================================================================*/
 
 @import 'components/_grid';
 @import 'components/_app';
+
+/* ===========================================================================
+ * HELPERS
+ * ==========================================================================*/
+
+ @import 'helpers/_flex';
+ @import 'helpers/_buttons';
+ @import 'helpers/_typography';
+ @import 'helpers/_backgrounds';
+ @import 'helpers/_borders';
+ @import 'helpers/_marginpadding';
+ @import 'helpers/_radius';
+ @import 'helpers/_utilities';
 
 /* ===========================================================================
  * RESPONSIVE

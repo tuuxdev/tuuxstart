@@ -1,0 +1,31 @@
+/* ===========================================================================
+ * PADDINGS
+ * ==========================================================================*/
+
+@each $index, $value in $measures-normal {
+  .padding-#{$index} {
+    padding: #{$value} !important;
+  }
+}
+
+@each $index in $measures-directions {
+  .padding-#{nth($index,1)}-#{nth($index,2)} {
+    padding-#{nth($index,1)}: #{nth($index,3)} !important;
+  }
+}
+
+/* ===========================================================================
+ * MARGINS
+ * ==========================================================================*/
+
+@each $index, $value in $measures-normal {
+  .margin-#{$index} {
+    margin: #{$value} !important;
+  }
+}
+
+@each $index in $measures-directions {
+  .margin-#{nth($index,1)}-#{nth($index,2)} {
+    margin-#{nth($index,1)}: #{nth($index,3)} !important;
+  }
+}
