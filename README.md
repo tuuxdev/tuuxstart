@@ -1,4 +1,4 @@
-### TUUXSTART v2.0 ###
+### TUUXSTART v2.0.0 ###
 
 Starter template for HTML/CSS/JS projects with Gulp as task runner
 
