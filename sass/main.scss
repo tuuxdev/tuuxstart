@@ -14,10 +14,10 @@
 @import 'global/_selection';
 
 /* ===========================================================================
- * NORMALIZE
+ * RESET
  * ==========================================================================*/
 
-@import 'global/_normalize';
+@import 'global/_reset';
 
 /* ===========================================================================
  * COMPONENTS
@@ -35,7 +35,7 @@
  @import 'helpers/_typography';
  @import 'helpers/_backgrounds';
  @import 'helpers/_borders';
- @import 'helpers/_marginpadding';
+ @import 'helpers/_spacers';
  @import 'helpers/_radius';
  @import 'helpers/_utilities';
 

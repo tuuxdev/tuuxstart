@@ -12,41 +12,42 @@ h3 {
  * TYPOGRAPHY COLORS
  * ==========================================================================*/
 
- @each $name, $color in $colors {
-  .font-#{$name} {
-    color: map-get($color, base) !important;
-  }
+@each $name,
+$color in $colors {
+	.font-#{$name} {
+		color: map-get($color, base) !important;
+	}
 }
 
 /* ===========================================================================
  * TYPOGRAPHY SIZE
  * ==========================================================================*/
 
-.font-n {
-	font-size: 1rem !important;
-}
-
-.font-xs {
+.font0 {
 	font-size: .5em !important;
 }
 
-.font-s {
+.font05 {
 	font-size: .8em !important;
 }
 
-.font-m {
+.font1 {
+	font-size: 1rem !important;
+}
+
+.font2 {
 	font-size: 1.2em !important;
 }
 
-.font-l {
+.font3 {
 	font-size: 1.5em !important;
 }
 
-.font-xl {
+.font4 {
 	font-size: 2em !important;
 }
 
-.font-xxl {
+.font5 {
 	font-size: 4em !important;
 }
 

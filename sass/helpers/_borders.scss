@@ -1,56 +1,14 @@
-$measures-borders-normal: (
-  "n": "2px",
-  "xs": "1px",
-  "s": "3px",
-  "m": "4px",
-  "l": "5px",
-  "xl": "6px",
-  "xxl": "7px",
-);
-
-$measures-borders-directions: (
-  ("top", "n", "2px"),
-  ("right", "n", "2px"),
-  ("bottom", "n", "2px"),
-  ("left", "n", "2px"),
-  ("top", "xs", "1px"),
-  ("right", "xs", "1px"),
-  ("bottom", "xs", "1px"),
-  ("left", "xs", "1px"),
-  ("top", "s", "3px"),
-  ("right", "s", "3px"),
-  ("bottom", "s", "3px"),
-  ("left", "s", "3px"),
-  ("top", "m", "4px"),
-  ("right", "m", "4px"),
-  ("bottom", "m", "4px"),
-  ("left", "m", "4px"),
-  ("right", "l", "5px"),
-  ("top", "l", "5px"),
-  ("bottom", "l", "5px"),
-  ("left", "l", "5px"),
-  ("top", "xl", "6px"),
-  ("right", "xl", "6px"),
-  ("bottom", "xl", "6px"),
-  ("left", "xl", "6px"),
-  ("top", "xxl", "7px"),
-  ("right", "xxl", "7px"),
-  ("bottom", "xxl", "7px"),
-  ("left", "xxl", "7px"),
-);
-/* ===========================================================================
- * BORDERS
- * ==========================================================================*/
-
- @each $index, $value in $measures-borders-normal {
-  .border-#{$index} {
+@each $index,
+$value in $measures-normal {
+  .b#{$index} {
     border: #{$value} solid lightgray !important;
   }
 }
 
-@each $index in $measures-borders-directions {
-  .border-#{nth($index,1)}-#{nth($index,2)} {
-    border-#{nth($index,1)}: #{nth($index,3)} solid lightgray !important;
+@each $index in $measures-directions {
+  .b#{nth($index,1)}#{nth($index,3)} {
+    border-#{nth($index,2)}: #{nth($index,4)} solid lightgray !important;
+    ;
   }
 }
 
@@ -58,8 +16,9 @@ $measures-borders-directions: (
  * BORDER COLORS
  * ==========================================================================*/
 
-@each $name, $color in $colors {
-  .border-#{$name} {
+@each $name,
+$color in $colors {
+  .b#{$name} {
     border-color: map-get($color, base) !important;
   }
 }

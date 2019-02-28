@@ -1,4 +1,4 @@
-### TUUXSTART v1.2.2 ###
+### TUUXSTART v2.0 ###
 
 Starter template for HTML/CSS/JS projects with Gulp as task runner
 
@@ -49,8 +49,7 @@ http://localhost:8080/
 8. [gulp-uglify](https://www.npmjs.com/package/gulp-uglify)
 9. [gulp-rename](https://www.npmjs.com/package/gulp-rename)
 10. Custom [HTML5 initializr](http://www.initializr.com/) 
-11. [Normalize.css](https://necolas.github.io/normalize.css/Normalize.css)
-12. [Bootstrap grid](http://getbootstrap.com/css/#grid)
+11. [Reset CSS](https://meyerweb.com/eric/tools/css/reset/)
 13. [Fontawesome](http://fontawesome.io/)
 14. [jQuery](https://jquery.com/)
 14. Some helper SASS classes

@@ -3,14 +3,14 @@
  * ==========================================================================*/
 
 @each $index, $value in $measures-normal {
-  .padding-#{$index} {
+  .p#{$index} {
     padding: #{$value} !important;
   }
 }
 
 @each $index in $measures-directions {
-  .padding-#{nth($index,1)}-#{nth($index,2)} {
-    padding-#{nth($index,1)}: #{nth($index,3)} !important;
+  .p#{nth($index,1)}#{nth($index,3)} {
+    padding-#{nth($index,2)}: #{nth($index,4)} !important;
   }
 }
 
@@ -19,13 +19,13 @@
  * ==========================================================================*/
 
 @each $index, $value in $measures-normal {
-  .margin-#{$index} {
+  .m#{$index} {
     margin: #{$value} !important;
   }
 }
 
 @each $index in $measures-directions {
-  .margin-#{nth($index,1)}-#{nth($index,2)} {
-    margin-#{nth($index,1)}: #{nth($index,3)} !important;
+  .m#{nth($index,1)}#{nth($index,3)} {
+    margin-#{nth($index,2)}: #{nth($index,4)} !important;
   }
 }

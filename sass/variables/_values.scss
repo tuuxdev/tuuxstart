@@ -1,51 +1,57 @@
 $transition: all .3s ease-in-out;
 $pi-number: 8px;
 
-$normal: $pi-number;
-$xtra-small: $pi-number / 2;
-$small: $pi-number * 2;
-$medium: $pi-number * 3;
-$large: $pi-number * 4;
-$xtra-large: $pi-number * 5;
-$xxtra-large: $pi-number * 6;
+$cero: 0;
+$one: $pi-number / 2;
+$two: $pi-number;
+$three: $pi-number * 2;
+$four: $pi-number * 3;
+$five: $pi-number * 4;
+$six: $pi-number * 5;
+$seven: $pi-number * 6;
 
 $measures-normal: (
-  "n": $normal,
-  "xs": $xtra-small,
-  "s": $small,
-  "m": $medium,
-  "l": $large,
-  "xl": $xtra-large,
-  "xxl": $xxtra-large,
+  "0": $cero,
+  "1": $one,
+  "2": $two,
+  "3": $three,
+  "4": $four,
+  "5": $five,
+  "6": $six,
+  "7": $seven,
 );
 
 $measures-directions: (
-  ("top", "n", $normal),
-  ("right", "n", $normal),
-  ("bottom", "n", $normal),
-  ("left", "n", $normal),
-  ("top", "xs", $xtra-small),
-  ("right", "xs", $xtra-small),
-  ("bottom", "xs", $xtra-small),
-  ("left", "xs", $xtra-small),
-  ("top", "s", $small),
-  ("right", "s", $small),
-  ("bottom", "s", $small),
-  ("left", "s", $small),
-  ("top", "m", $medium),
-  ("right", "m", $medium),
-  ("bottom", "m", $medium),
-  ("left", "m", $medium),
-  ("right", "l", $large),
-  ("top", "l", $large),
-  ("bottom", "l", $large),
-  ("left", "l", $large),
-  ("top", "xl", $xtra-large),
-  ("right", "xl", $xtra-large),
-  ("bottom", "xl", $xtra-large),
-  ("left", "xl", $xtra-large),
-  ("top", "xxl", $xxtra-large),
-  ("right", "xxl", $xxtra-large),
-  ("bottom", "xxl", $xxtra-large),
-  ("left", "xxl", $xxtra-large),
+  ("t", "top", "0", $cero),
+  ("r", "right", "0", $cero),
+  ("b", "bottom", "0", $cero),
+  ("l", "left", "0", $cero),  
+  ("t", "top", "1", $one),
+  ("r", "right", "1", $one),
+  ("b", "bottom", "1", $one),
+  ("l", "left", "1", $one),
+  ("t", "top", "2", $two),
+  ("r", "right", "2", $two),
+  ("b", "bottom", "2", $two),
+  ("l", "left", "2", $two),
+  ("t", "top", "3", $three),
+  ("r", "right", "3", $three),
+  ("b", "bottom", "3", $three),
+  ("l", "left", "3", $three),
+  ("t", "top", "4", $four),
+  ("r", "right", "4", $four),
+  ("b", "bottom", "4", $four),
+  ("l", "left", "4", $four),
+  ("t", "top", "5", $five),
+  ("r", "right", "5", $five),
+  ("b", "bottom", "5", $five),
+  ("l", "left", "5", $five),
+  ("t", "top", "6", $six),
+  ("r", "right", "6", $six),
+  ("b", "bottom", "6", $six),
+  ("l", "left", "6", $six),
+  ("t", "top", "7", $seven),
+  ("r", "right", "7", $seven),
+  ("b", "bottom", "7", $seven),
+  ("l", "left", "7", $seven),
 );
